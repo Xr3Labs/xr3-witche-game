@@ -1,0 +1,154 @@
+@import "font";
+@import "common";
+@import "./token/elevation";
+@import "./token/colors.scss";
+
+.claim-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content:   center;
+    align-items: center;
+    padding: 6px 18px;
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    right: 0px;
+    top: calc(50% - 36px/2);
+    border:0px;
+    background: $accent-primary;
+    border-radius: 999px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $basic-bg-primary;
+}
+
+.register-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content:   center;
+    align-items: center;
+    padding: 6px 18px;
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    right: 0px;
+    top: calc(50% - 36px/2);
+    border:0px;
+    background: $accent-primary;
+    border-radius: 999px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $basic-bg-primary;
+    margin-right: 33px;
+}
+
+.reward-stat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 1176px;
+    height: 120px;
+    left: calc(50% - 1080px/2);
+    top: 176px;
+    @include elevation-1;
+    background: $basic-bg-primary;
+    .reward-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-gap: 20px;
+        grid-template-rows: 72px 72px 72px;
+        padding: 24px;
+        position: static;
+        width: 1126px;
+        height: 72px;
+        left: 24px;
+        top: 24px;
+    }
+    @import "font";
+}
+
+.block-body{
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(53, 16px);
+    grid-gap: 8px;
+    grid-template-rows: 16px ;
+    position: absolute;
+    width: 1176px;
+    height: 160px;
+    left: calc(50% - 1080px/2);
+    top: 320px;
+}
+
+@mixin block-sty{
+    position: static;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.block-gone{
+    @include block-sty;
+    background: $accent-secondary;
+}
+
+.block-view{
+    @include block-sty;
+    background: $accent-primary;
+}
+
+.block-coming{
+    @include block-sty;
+    background: $line-line-secondary;
+}
+
+.content-info{
+    position: absolute;
+    width: 456px;
+    height: 60px;
+    left: -420px;
+    top: 785px;
+    @include regular-type-note;
+    color: $basic-ink-secondary;
+}
+
+.reward-msg{
+    width: 100%;
+}
+
+.no-history{
+    position:absolute;
+    top: 560px;
+    left: 10px;
+    width: 1000px;
+    @include semibold-type-body-sb;
+}
+
+
+.tb-sty{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 1182px;
+    left: calc(50% - 1083px/2);
+    top: 550px;
+    height: 225px;
+    overflow: auto;
+}
+
+.ETHAddress{
+    margin-top: 13px;
+    width: 650px;
+    // box-shadow: 0px 2px 6px rgba(6, 119, 198, 0.4); /* 设置阴影 */
+    // background-color: $accent-primary; /* 设置背景颜色 */
+    // border-radius: 6px;
+}

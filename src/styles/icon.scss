@@ -1,0 +1,48 @@
+.icon-body2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 185px;
+    height: 24px;
+    left: 56px;
+    top: 4px;
+}
+
+@mixin link{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+}
+.icon-link2{
+    position: relative;
+    width: 6px;
+    height: 6px;
+    top: -10px;
+    left: -18px;
+}
+
+.icon-link3{
+    position: relative;
+    width: 6px;
+    height: 6px;
+    top: -2px;
+    left: -30px;
+    margin: 10px;
+}
+
+.icon-link4{
+    @include link;
+    left: 155px;
+    top:250px;
+}
+
+.reward-link{
+    position: relative;
+    width: 6px;
+    height: 6px;
+    top: -5px;
+    left: -155px;
+    margin: 10px;
+}

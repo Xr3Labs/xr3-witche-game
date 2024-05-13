@@ -1,0 +1,8 @@
+{
+	"APP_NAME": "XR3 Game",
+	"POLKADOT_JS_EXTENSION": "https://polkadot.js.org/extension/",
+	"XR3_EXPLORE": "https://polkadot.js.org/apps/?rpc=wss://fraa-flashbox-2958-rpc.a.stagenet.tanssi.network#/accounts",
+	"KSM_NETWORK": "https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama-rpc.polkadot.io#/explorer",
+	"REWARD_QUERY": "https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A8844#/explorer/query/",
+	"HRMP_DOC": ""
+}

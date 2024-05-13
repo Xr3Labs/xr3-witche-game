@@ -1,0 +1,140 @@
+@import "colors.scss";
+
+@mixin regular-common{
+    font-weight: 400;
+    font-style: normal;
+    color: $text-color;
+}
+
+@mixin semibold-common{
+    font-weight: 600;
+    font-style: normal;
+    color: $text-color;
+}
+
+@mixin extrabold-common{
+    font-weight: 800;
+    font-style: normal;
+    color: $text-color;
+}
+
+@mixin regular-type-dispaly{
+        @include regular-common;
+        font-size: 32px;
+        line-height: 48px;
+}
+
+@mixin regular-type-headline{
+        @include regular-common;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+@mixin regular-type-body{
+        @include regular-common;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+@mixin regular-type-note{
+        @include regular-common;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+@mixin regular-type-caption{
+        @include regular-common;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+@mixin semibold-type-display-sb{
+        @include semibold-common;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+@mixin semibold-type-headline-sb{
+        @include semibold-common;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+@mixin semibold-type-body-sb{
+        @include semibold-common;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+@mixin semibold-type-note-sb{
+        @include semibold-common;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+@mixin semibold-type-caption-sb{
+        @include semibold-common;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+@mixin extrabold-type-display-eb{
+        @include extrabold-common;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+@mixin extrabold-type-headline-eb{
+        @include extrabold-common;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+@mixin extrabold-type-body-eb{
+        @include extrabold-common;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+@mixin extrabold-type-note-eb{
+        @include extrabold-common;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @mixin extrabold-type-caption-eb{
+        @include extrabold-common;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+@mixin tabular-figures-type-body-tnum{
+        @include regular-common;
+        font-size: 16px;
+        line-height: 24px;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+    }
+
+@mixin tabular-figures-type-body-sb-tnum{
+        @include semibold-common;
+        font-size: 16px;
+        line-height: 24px;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+    }
+
+@mixin tabular-figures-type-display-eb-tnum{
+        @include extrabold-common;
+        font-size: 32px;
+        line-height: 48px;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+    }
+
+@mixin all-cap-type-caption-sb-caps{
+        @include semibold-common;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.0625em;
+        text-transform: uppercase;
+    }

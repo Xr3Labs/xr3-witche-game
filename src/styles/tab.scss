@@ -1,0 +1,89 @@
+@import "font";
+@import "./token/text.scss";
+@import "./token/colors.scss";
+
+.Tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 247px;
+    height: 56px;
+    left: calc(50% - 350px/2);
+    top: 0px;
+}
+
+@mixin tab-dispaly{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0px 0px;
+    position: static;
+    height: 56px;
+    top: 0px;
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 32px;
+}
+
+.network-tab{
+    @include tab-dispaly;
+    width: 65px;
+    left: 84px;
+    order: 1;
+}
+
+.rewards-tab{
+    @include tab-dispaly;
+    width: 66px;
+    left: 181px;
+    order: 2;
+}
+
+.tab-font{
+    @include semibold-type-body-sb;
+    text-align: center;
+    color: $accent-primary;
+}
+
+@mixin tab-sty{
+    position: static;
+    height: 2px;
+    left: 0px;
+    top: 54px;
+    background: $accent-primary;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 14px 0px;
+}
+
+.tab-lineAssets{
+    @include tab-sty;
+    width: 52px;
+}
+
+.tab-lineNetwork{
+    @include tab-sty;
+    width: 65px;
+}
+
+.tab-lineRewards{
+    @include tab-sty;
+    width: 66px;
+}
+
+.default-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 32px 32px 32px;
+}
+
+.tab-fontdefault{
+    @include regular-type-body;
+    text-align: center;
+    color: $basic-ink-primary;
+}

@@ -1,0 +1,435 @@
+@import "font";
+@import "icon";
+@import "tab";
+@import "common";
+@import "./token/elevation";
+@import "./token/text.scss";
+@import "./token/colors.scss";
+
+@mixin dis-dir-ali{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin dis-dir-ali-center{
+    @include dis-dir-ali;
+    justify-content: center;
+}
+
+@mixin dispaly-sty {
+    @include dis-dir-ali;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.header-default {
+    @include dispaly-sty;
+    padding: 0px 49px;
+    height: 56px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: $basic-bg-primary;
+    box-shadow: 0px 16px 24px rgba(33, 33, 44, 0.02), 0px 8px 12px rgba(33, 33, 44, 0.02), 0px 6px 8px rgba(33, 33, 44, 0.02), 0px 4px 6px rgba(33, 33, 44, 0.03), 0px 0px 0.5px rgba(33, 33, 44, 0.08);
+    .nav-brand{
+        position: absolute;
+        width: 160px;
+        height: 56px;
+        left: 24px;
+        text-align: center;
+        line-height: 56px;
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.0625em;
+        text-transform: uppercase;
+    }
+    .nav-account {
+        position: absolute;
+        width: 160px;
+        height: 56px;
+        right: 24px;
+    }
+}
+
+.text-default{
+    @include dispaly-sty;
+    padding: 0px;
+    width: 1128px;
+    height: 32px;
+    left: calc(50% - 1050px/2);
+    top: 114px;
+
+    .icon-link{
+        width: 580px;
+        height: 24px;
+        left: 100px;
+        top: 4px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 733px;
+    }
+}
+
+.text-default-3{
+    @include dispaly-sty;
+    padding: 0px;
+    width: 1128px;
+    height: 32px;
+    left: 784px;
+    top: 114px;
+}
+
+.text-default-balance{
+    @include dispaly-sty;
+    padding: 0px;
+    width: 1128px;
+    height: 32px;
+    left: 784px;
+    color: rgb(255, 0, 0);
+    top: 114px;
+}
+
+.icon-sty{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 6px;
+    position: static;
+    width: 6px;
+    height: 12px;
+    left: 270px;
+    top: 6px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+.explorer-sty{
+    @include semibold-type-body-sb;
+    color: $accent-primary;
+}
+
+.foot-default{
+    @include dis-dir-ali-center;
+    padding: 24px;
+    position: fixed;
+    height: 56px;
+    left:0px;
+    right: 0px;
+    height: 56px;
+    top: 752px;
+    background: $basic-bg-secondary;
+}
+
+.foot-font{
+    position: static;
+    height: 20px;
+    left: 0px;  
+    top: 0px;
+    @include regular-type-note;
+    color: $basic-ink-secondary;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 14px;
+}
+
+.wallet{
+    position: absolute;
+    width: 152px;
+    height: 36px;
+    right: 0px;
+    top: calc(50% - 36px/2);
+    background: $accent-primary;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0px;
+    color: $basic-bg-primary;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 1176px;
+    height: 216px;
+    left: calc(50% - 1080px/2);
+    top: 176px;
+    @include elevation-1;
+    background: $basic-bg-primary;
+}
+
+.body-default{
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(3, 360px);
+    grid-gap: 20px;
+    grid-template-rows: 72px 72px 72px;
+    position: static;
+    width: 1128px;
+    height: 168px;
+    left: calc(50% - 1176px/2);
+    top: 200px;
+    padding: 24px;
+}
+
+.body-noacc{
+    @include dispaly-sty;
+    width: 1176px;
+    height: 144px;
+    left: calc(50% - 1080px/2);
+    top: 416px;
+    @include elevation-1;
+    background: $basic-bg-primary;
+}
+
+.noacc-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 657px;
+    height: 72px;
+    left: 24px;
+    top: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 111px;
+}
+
+.noacc-p{
+    position: absolute;
+    width: 500px;
+    height: 32px;
+    left: 24px;
+    top: 24px;
+    @include extrabold-type-headline-eb;
+    color: $basic-ink-primary;
+}
+
+.noacc-p2{
+    position: absolute;
+    width: 760px;
+    height: 48px;
+    left: 24px;
+    top: 72px;
+    @include regular-type-body;
+    color: $basic-ink-primary;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.get-account{
+    @include regular-type-body;
+    @include dis-dir-ali-center;
+    position: absolute;
+    width: 251px;
+    height: 36px;
+    right: 24px;
+    top: calc(50% - 36px/2);
+    background: $accent-primary;
+    border-radius: 999px;
+    text-align: center;
+    border: 0px;
+    color: $basic-bg-primary;
+}
+
+.btn-link{
+    @include dis-dir-ali-center;
+    padding: 6px 18px;
+    position: static;
+    width: 251px;
+    height: 36px;
+    right: 24px;
+    top: calc(50% - 36px/2);
+}
+
+.foot{
+    position: absolute;
+    height: 56px;
+    left: 0px;
+    right: 0px;
+    top: 824px;
+    background: #F6F6F8;
+}
+
+.foot-wrap{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+
+    position: absolute;
+    width: 232px;
+    height: 20px;
+    left: calc(50% - 232px/2);
+    top: calc(50% - 20px/2);
+}
+
+.tb-row{
+    height: 48px;
+    background-color: $accent-primary
+}
+
+.tab-sty{
+    position: absolute;
+    width: 247px;
+    height: 56px;
+    left: 1000px;
+    top: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 317px;
+}
+
+.select-bd{
+    display: flex;
+    position: static;
+    width: 200px;
+    height: 56px;
+    left: 10px;
+    text-align: center;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    padding: 10px;
+    margin: 10px 24px 10px 1275px;
+    
+}
+
+.select-dw{
+    @include dis-dir-ali-center;
+    padding: 2px 14px 2px 18px;
+    position: static;
+    width: 141px;
+    height: 36px;
+    right: 0px;
+    top: calc(50% - 36px/2);
+
+}
+
+.btn-bd{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 247px;
+    height: 56px;
+    left: 340px;
+    top: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 317px;
+}
+
+.pic{
+    position: static;
+    width: 32px;
+    height: 32px;
+    left: 24px;
+    top: 0px;
+}
+
+.game-pic{
+    position: static;
+    width: 128px;
+    height: 128px;
+    margin-top: 24px;
+    left: 24px;
+    top: 0px;
+}
+
+.lg-p{
+    position: static;
+    width: 155px;
+    height: 24px;
+    @include regular-type-body;
+    color: $accent-primary;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 25px;
+}
+
+.wrap-account{
+    @include dis-dir-ali-center;
+    padding: 2px 14px 2px 18px;
+    position: absolute;
+    width: 141px;
+    height: 36px;
+    top: calc(50% - 36px/2);
+    // left: 1250px;
+    right: 24px;
+    margin-right: 24px;
+    // background: $accent-bg;
+    // border: 1px solid $accent-primary;
+    box-sizing: border-box;
+    border-radius: 999px;
+    
+}
+
+.connect-wallet{
+    @include dis-dir-ali-center;
+    padding: 2px 14px 2px 18px;
+    position: absolute;
+    width: 141px;
+    height: 36px;
+    top: calc(50% - 36px/2);
+    // left: 1250px;
+    right: 0px;
+    margin-right: 24px;
+    background: $accent-bg;
+    border: 1px solid $accent-primary;
+    box-sizing: border-box;
+    border-radius: 999px;
+}
+
+.account-id{
+    @include dis-dir-ali;
+    justify-content: space-between;
+    padding: 8px 16px;
+    position: static;
+    width:228px;
+    height: 56px;
+    left: 0px;
+    right: 0px;
+    top: 16px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.message-sty{
+    position: absolute;
+    height: 45px;
+    top: 57px;
+    left: -1212px;
+    width: 2000px;
+    background: #FFF6F0;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(33, 33, 44, 0.04), 0px 4px 12px rgba(33, 33, 44, 0.04), 0px 2px 8px rgba(33, 33, 44, 0.04), 0px 1px 4px rgba(33, 33, 44, 0.04), 0px 0px 0.5px rgba(33, 33, 44, 0.08);
+}
+
+.message-extension{
+    position: absolute;
+    height: 45px;
+    top: 40px;
+    // left: 140px;
+    width: 2000px;
+    background: #FFF6F0;
+    box-shadow: 0px 8px 16px rgba(33, 33, 44, 0.04), 0px 4px 12px rgba(33, 33, 44, 0.04), 0px 2px 8px rgba(33, 33, 44, 0.04), 0px 1px 4px rgba(33, 33, 44, 0.04), 0px 0px 0.5px rgba(33, 33, 44, 0.08);
+}
