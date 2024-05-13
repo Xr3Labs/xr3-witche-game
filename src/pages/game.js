@@ -108,7 +108,7 @@ const Game = () => {
     }
 
     const handle_change = async () => {
-        console.log(`start claim reward.....`);
+        console.log(`start fund reward.....`);
         let history = new Array();
         const fromAcct = await getFromAcct();
         if (accBalance < 1.0015) {
@@ -126,7 +126,7 @@ const Game = () => {
                 console.log(`Transaction included at blockHash ${result.status.asInBlock}`);
             } else if (result.status.isFinalized) {
                 console.log(`Transaction finalized at blockHash ${result.status.asFinalized}`);
-                ClaimSuccess(" claim successfully !")
+                ClaimSuccess(" fund successfully !")
                 let claim_time = thisTime();
                 let block = await api.rpc.chain.getBlock(result.status.asFinalized);
                 msg.block_number = block.block.header.number;
@@ -150,7 +150,6 @@ const Game = () => {
             }
         })
 
-        console.log(`claimed all reward ? ${claimedAll}`);
     }
 
     return (
